@@ -2,7 +2,7 @@
   "name": "TimeCat",
   "version": "1.0.0",
   "scripts": {
-    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "start": "webpack-dev-server --progress --colors",
     "lite": "lite-server",
     "tsc": "tsc",
     "tsc:w": "tsc -w"
@@ -33,8 +33,11 @@
   "devDependencies": {
     "@types/core-js": "^0.9.34",
     "@types/node": "^6.0.45",
+    "awesome-typescript-loader": "^2.2.4",
     "concurrently": "^3.0.0",
     "lite-server": "^2.2.2",
-    "typescript": "^2.0.3"
+    "ts-loader": "^1.0.0",
+    "typescript": "^2.0.3",
+    "webpack": "^1.13.3"
   }
 }
